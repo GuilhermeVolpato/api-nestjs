@@ -1,0 +1,84 @@
+Atual:
+
+- src
+  - app
+      - app.controller.ts
+      - app.module.ts
+      - app.service.ts
+  - gemini
+      - gemini.controller.spec.ts
+      - gemini.controller.ts
+      - gemini.module.ts
+      - gemini.service.spec.ts
+      - products.service.ts
+  - products
+      - products.controller.spec.ts
+      - products.controller.ts
+      - products.module.ts
+      - products.service.spec.ts
+      - products.service.ts
+  - google_place_api
+      - google_place.controller.spec.ts
+      - google_place.controller.ts
+      - google_place.module.ts
+      - google_place.service.spec.ts
+      - google_place.service.ts
+  - main.ts
+
+
+GEMINI:
+src
+├── app
+│   ├── app.controller.ts
+│   ├── app.module.ts
+│   └── app.service.ts
+├── gemini
+│   ├── gemini.controller.spec.ts
+│   ├── gemini.controller.ts
+│   ├── gemini.module.ts
+│   ├── gemini.service.spec.ts
+│   ├── products.service.ts
+│   └── results
+│       ├── results.controller.spec.ts
+│       ├── results.controller.ts
+│       ├── results.module.ts
+│       └── results.service.ts
+├── google_place
+│   ├── google_place.controller.spec.ts
+│   ├── google_place.controller.ts
+│   ├── google_place.module.ts
+│   ├── google_place.service.spec.ts
+│   └── google_place.service.ts
+├── main.ts
+└── shared
+    ├── results-aggregator.service.ts
+    └── results-aggregator.pipe.ts
+
+
+CHATGPT:
+
+- src
+  - app
+    - app.controller.ts
+    - app.module.ts
+    - app.service.ts
+  - gemini
+    - controllers
+      - gemini.controller.ts
+    - services
+      - authentication.service.ts
+      - user.service.ts
+      - transaction.service.ts
+    - gemini.module.ts
+  - google_places_api
+    - google-places-api.service.ts
+  - products
+    - products.controller.spec.ts
+    - products.controller.ts
+    - products.module.ts
+    - products.service.spec.ts
+    - products.service.ts
+  - aggregation
+    - data-aggregator.controller.ts
+    - data-aggregator.service.ts
+  - main.ts

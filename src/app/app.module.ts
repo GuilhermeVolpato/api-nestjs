@@ -4,6 +4,7 @@ import { ProductsModule } from '../products/products.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Product } from '../products/entities/product.entity';
 import { AppController } from './app.controller';
+import { GeminiModule } from 'src/gemini/gemini.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { AppController } from './app.controller';
       synchronize: true,
     }),
     ProductsModule,
+    GeminiModule,
   ],
   controllers: [AppController],
   providers: [AppService],
