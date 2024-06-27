@@ -88,4 +88,18 @@ export class PreferencesService {
       await this.preferenceRepository.save(newPreference);
     }
   }
+
+  async getAllPreferences() {
+    return await this.preferenceRepository.find();
+  }
+
+  async getUserPreferences(userId: number) {
+    const user = await this.userRepository.findOne({
+      where: { id: userId },
+      relations: ['preferences'],
+    });
+    if (!user) throw new Error('User not found');
+
+    return user.preferences;
+  }
 }
